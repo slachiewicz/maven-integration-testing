@@ -77,11 +77,11 @@ under the License.
     <proxy.host>localhost</proxy.host>
     <proxy.port>80</proxy.port>
     <proxy.type>none</proxy.type>
-    <proxy.user></proxy.user>
-    <proxy.pass></proxy.pass>
+    <proxy.user/>
+    <proxy.pass/>
     <proxy.nonProxyHosts>localhost</proxy.nonProxyHosts>
     <slf4jVersion>1.6.1</slf4jVersion>
-    <jetty9Version>9.0.4.v20130625</jetty9Version>
+    <jetty9Version>9.3.24.v20180605</jetty9Version>
   </properties>
 
   <dependencies>
@@ -407,14 +407,11 @@ under the License.
                 </goals>
                 <configuration>
                   <tasks>
-                    <delete dir="${mavenHome}" />
-                    <unzip src="${project.build.directory}/maven-bin.zip"
-                      dest="${mavenHome}">
-                      <globmapper from="apache-maven-${mavenVersion}/*"
-                        to="*" handledirsep="true" />
+                    <delete dir="${mavenHome}"/>
+                    <unzip src="${project.build.directory}/maven-bin.zip" dest="${mavenHome}">
+                      <globmapper from="apache-maven-${mavenVersion}/*" to="*" handledirsep="true"/>
                     </unzip>
-                    <chmod dir="${mavenHome}/bin" perm="ugo+rx"
-                      includes="mvn,mvnDebug" />
+                    <chmod dir="${mavenHome}/bin" perm="ugo+rx" includes="mvn,mvnDebug"/>
                   </tasks>
                 </configuration>
               </execution>
@@ -454,13 +451,11 @@ under the License.
                 </goals>
                 <configuration>
                   <tasks>
-                    <delete dir="${mavenHome}" />
+                    <delete dir="${mavenHome}"/>
                     <unzip src="${mavenDistro}" dest="${mavenHome}">
-                      <regexpmapper from="^([^/]+)/(.*)$"
-                        to="\2" handledirsep="true" />
+                      <regexpmapper from="^([^/]+)/(.*)$" to="\2" handledirsep="true"/>
                     </unzip>
-                    <chmod dir="${mavenHome}/bin" perm="ugo+rx"
-                      includes="mvn,mvnDebug" />
+                    <chmod dir="${mavenHome}/bin" perm="ugo+rx" includes="mvn,mvnDebug"/>
                   </tasks>
                 </configuration>
               </execution>
@@ -496,12 +491,11 @@ under the License.
                 </goals>
                 <configuration>
                   <tasks>
-                    <delete dir="${preparedMavenHome}" />
+                    <delete dir="${preparedMavenHome}"/>
                     <copy todir="${preparedMavenHome}" overwrite="true">
-                      <fileset dir="${mavenHome}" />
+                      <fileset dir="${mavenHome}"/>
                     </copy>
-                    <chmod dir="${preparedMavenHome}/bin" perm="ugo+rx"
-                      includes="mvn,mvnDebug" />
+                    <chmod dir="${preparedMavenHome}/bin" perm="ugo+rx" includes="mvn,mvnDebug"/>
                   </tasks>
                 </configuration>
               </execution>

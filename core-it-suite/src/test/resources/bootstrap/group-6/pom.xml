@@ -107,7 +107,7 @@ under the License.
     <dependency>
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-aether-provider</artifactId>
-      <version>3.1.1</version>
+      <version>3.2.5</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.aether</groupId>
@@ -153,7 +153,7 @@ under the License.
     <dependency>
       <groupId>org.codehaus.mojo</groupId>
       <artifactId>flatten-maven-plugin</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>

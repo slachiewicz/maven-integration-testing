@@ -36,7 +36,7 @@ under the License.
   <name>Maven Integration Test :: Boostrap :: Group-1</name>
 
   <properties>
-    <stubPluginVersion>0.1-stub-SNAPSHOT</stubPluginVersion>
+    <stubPluginVersion>2.0</stubPluginVersion>
   </properties>
 
   <dependencies>

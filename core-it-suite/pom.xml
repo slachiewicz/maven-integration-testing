@@ -150,7 +150,7 @@ under the License.
     <dependency>
       <groupId>org.codehaus.plexus</groupId>
       <artifactId>plexus-archiver</artifactId>
-      <version>3.6.0</version>
+      <version>4.2.4</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.sisu</groupId>
